@@ -56,6 +56,7 @@ li {
   align-items: center;
   margin: 20px;
   max-width: 300px;
+  min-width: 250px;
 }
 
 li h2 {
@@ -135,6 +136,27 @@ dialog {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* mixins */
+/* media queries */
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    padding: 5px;
+  }
+  li {
+    max-width: 400px;
+    min-width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    padding: 3px;
+  }
+  li {
+    max-width: none;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
