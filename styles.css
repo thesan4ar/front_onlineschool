@@ -1,0 +1,162 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  background-color: #e4e9f5;
+  font-family: Candara, sans-serif;
+}
+
+header {
+  background-color: #bdebf0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+li h2 {
+  margin-bottom: 10px;
+}
+
+li p {
+  text-align: justify;
+}
+
+li form {
+  margin-left: auto;
+}
+
+button {
+  background-color: #bdebf0;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+button a {
+  color: black;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 2px;
+}
+
+form input[type=text] {
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  margin-bottom: -3px;
+}
+
+li {
+  position: relative;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* mixins */
+/* media queries */
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    padding: 5px;
+  }
+  li {
+    max-width: 400px;
+    min-width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    padding: 3px;
+  }
+  li {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
